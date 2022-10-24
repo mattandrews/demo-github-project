@@ -7,11 +7,22 @@ const multiplyNumbers = (x, y) => {
 }
 
 const multiplyByTen = x => {
-  return multiplyNumbers(x, 10);
+  return x * 10;
+}
+
+const roundNumber = x => {
+  return Math.floor(x);
+}
+
+const randomNumber = () => {
+  // return Math.floor(Math.random() * (max - min + 1) + min)
+  return 42;
 }
 
 module.exports = {
   addNumbers,
   multiplyNumbers,
-  multiplyByTen
+  multiplyByTen,
+  roundNumber,
+  randomNumber
 }
